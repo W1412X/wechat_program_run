@@ -1,0 +1,24 @@
+
+
+<view class="head" style="flex-direction:row;">
+    <image class="icon" src="/resources/joyrun.png" mode="aspectFill"/>
+    <button bindtap="starRun">run</button>
+    <button bindtap="openLocation">open the postion</button>
+    <button bindtap="stopRun">stop</button>
+    <text>\nalready run：{{meters}}km</text>
+    <text>\n\ntime：{{time}}</text>
+</view>
+
+<view class="mainView">
+   <map
+        class="mapView"
+        style="width: 100%; height: 375px;"
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+        markers="{{markers}}"
+        covers="{{covers}}"
+        >
+    </map>
+
+</view>
+
